@@ -5,3 +5,14 @@ const { AuthenticationError } = require("apollo-server-expres");
 // const { signToken } = require("../utils/auth");
 
 // const resolvers = { Query: {} Mutation: {} }
+
+const resolvers = {
+
+    Query: {
+
+        users: async => {
+            return User.find().populate("posts");
+        },
+        
+    }
+}
