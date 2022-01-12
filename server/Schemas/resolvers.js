@@ -13,6 +13,11 @@ const resolvers = {
         users: async => {
             return User.find().populate("posts");
         },
+
+        user: async (parent, { username }) => {
+            return User.findOne({ username: username });
+        },
+
         
     }
 }
