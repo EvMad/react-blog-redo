@@ -15,3 +15,10 @@ const userSchema = new Schema ({
         minlength: 8,
       },
 });
+
+// pre-save middleware to create password
+// userSchema.pre('save', async function (next) {})
+
+
+//compare password to hashed password
+// userSchema.methods.isCorrectPassword = async function (password) {}
