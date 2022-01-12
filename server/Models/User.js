@@ -22,3 +22,8 @@ const userSchema = new Schema ({
 
 //compare password to hashed password
 // userSchema.methods.isCorrectPassword = async function (password) {}
+
+
+const User = model('User', userSchema);
+
+module.exports = User;
