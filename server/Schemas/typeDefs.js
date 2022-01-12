@@ -7,6 +7,15 @@ type User {
     password: String
     posts: [Post]!
 }
-
+type Post {
+    _id: ID
+    postContent: String
+    postAuthor: String
+    user_id: String
+    postTitle: String
+    createdAt: String
+    categories: [CateforyName]!
+    comments: [Comment]!
+}
 
 `
