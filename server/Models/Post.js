@@ -6,6 +6,10 @@ const dateFormat = require('../utils/dateFormat');
 const postSchema = new Schema ({
 
     postTitle: {
+        type: String,
+        required: 'Please include title.',
+        minlength: 1,
+        trim: true,
 
     },
 
