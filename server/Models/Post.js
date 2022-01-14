@@ -12,7 +12,7 @@ const postSchema = new Schema ({
         trim: true,
 
     },
-
+// pull post Author from User model ?
     postAuthor: {
         type: String,
         required: 'Please include author name.',
@@ -53,9 +53,22 @@ const postSchema = new Schema ({
 
     comments: [
         {
-            commentText: {},
-            commentAuthor: {},
-            createdAt: {},
+            commentText: {
+                type: String,
+                required: true,
+                minlength: 1,
+                maxlength: 280,
+            },
+            //pull comment author from User model?
+            commentAuthor: {
+                type: String,
+                required: true,
+            },
+            createdAt: {
+                type: Date,
+            default: Date.now,
+            get: (timestamp) => dateFormat(timestamp),
+            },
         },
     ],
 
