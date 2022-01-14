@@ -14,7 +14,10 @@ const postSchema = new Schema ({
     },
 
     postAuthor: {
-
+        type: String,
+        required: 'Please include author name.',
+        minlength: 1,
+        trim: true,
     },
 
     postContent: {
