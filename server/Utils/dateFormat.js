@@ -65,6 +65,7 @@ module.exports = (
         const amPm = dateObj.getHours() >= 12 ? "pm" : "am";
 
         const formattedTimeStamp = `${formattedMonth} ${dayOfMonth}, ${year} at ${hour}:${minutes} ${amPm}`;
+        // double check temp literal for ${hour} re let hour = 
 
         return formattedTimeStamp;
 
