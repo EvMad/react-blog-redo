@@ -21,6 +21,10 @@ const postSchema = new Schema ({
     },
 
     postContent: {
+        type: String,
+        required: 'Post content required.',
+        minlength: 1,
+        trim: true,
 
     },
 
@@ -28,16 +32,23 @@ const postSchema = new Schema ({
 
     categories: [
         {
-            category: {},
+            category: {
+                type: String,
+                required: 'Please tag at least one category.',
+                minlength: 1,
+                maxlength: 125,
+            },
         }
     ],
 
     user_id: {
-
+        type: String,
     },
 
     createdAt: {
-
+        type: Date,
+        default: Date.now,
+        get: (timestamp) => dateFormat(timestamp),
     },
 
     comments: [
