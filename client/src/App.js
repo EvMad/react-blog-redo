@@ -8,3 +8,11 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
+
+//import components
+
+
+// construct main GraphQL API endpoint
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
