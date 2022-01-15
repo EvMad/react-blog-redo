@@ -96,6 +96,19 @@ const resolvers = {
             throw new AuthenticationError("Please log in.");
         },
 
-        //editPost
+        editPost: async(parent, { postTitle, postContent, postId }, context) => {
+
+            if (context.user) {
+                const post = await Post.findOneAndUpdate(
+                    { _id: postId },
+                    { postTitle: postTitle, postContent: postContent }
+                );
+
+                return post;
+            }
+            throw new AuthenticationError("Please log in.");
+        },
+
+        //addComment
     }
 }
