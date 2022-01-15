@@ -18,4 +18,12 @@ type Post {
     comments: [Comment]!
 }
 
+type Comment {
+    _id: ID
+    commentText: String
+    commentAuthor: String
+    createdAt: String
+}
+
+
 `
