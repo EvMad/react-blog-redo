@@ -24,6 +24,22 @@ type Comment {
     commentAuthor: String
     createdAt: String
 }
+type CategoryName {
+    category: String
+}
+
+type Auth {
+    token: ID!
+    user: User
+}
+
+type Query {
+    users: [User]
+    user(username: String!): User
+    posts: [Post]
+    usersPost(userID: String!): Post
+    post(postId: ID!): Post
+}
 
 
 `
