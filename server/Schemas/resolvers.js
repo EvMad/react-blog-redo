@@ -109,6 +109,26 @@ const resolvers = {
             throw new AuthenticationError("Please log in.");
         },
 
-        addComment: async ()
-    }
-}
+        addComment: async (parent, { postId, commentText }, context) => {
+
+            if (context.user) {
+                let newComment = {
+                    commentText: commentText,
+                    commentAuthor: context.user.username,
+                };
+                console.log(newComment);
+                return Post.findOneAndUpdate(
+                    { _id: postId },
+                    { $addToSet: { comments: newComment },
+                },
+                {
+                    new: true,
+                    runValidators: true,
+                }
+                );
+            } else {
+                throw new AuthenticationError("Please log in.");
+            }
+        },
+    },
+};
