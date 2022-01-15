@@ -1,6 +1,8 @@
 const db = require('../config/connection'); 
 const { User, Post } = require('../models');
+// const userSeed = require('./userSeed.json');
+// const postSeed = require('./postSeed.json');
 
-// const { model } = require('../models');
+
 
 //db.once('open', async () => { await model.deleteMany({}); await model.create(modelSeeds); })
