@@ -1,4 +1,5 @@
-const db = require('../config/connection');
+const db = require('../config/connection'); 
+const { User, Post } = require('../models');
 
 // const { model } = require('../models');
 
