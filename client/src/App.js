@@ -16,3 +16,20 @@ import './App.css';
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
+
+//request middleware / attach JWT to every request
+
+const authLink = setContext((_, { headers }) => {
+
+  const token = localStorage.getItem('id_token');
+
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+
+});
+
+// Apollo Client
