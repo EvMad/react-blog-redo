@@ -50,3 +50,5 @@ type Mutation {
     removeComment(postId: ID!, commentId: ID!): Post
 }
 `;
+
+module.exports = typeDefs;
