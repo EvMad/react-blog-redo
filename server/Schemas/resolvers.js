@@ -26,5 +26,15 @@ const resolvers = {
                 return Post.find({ user_id: userID }).sort({ createdAt: -1 });
             }
         },
-    }
+
+        usersPost: async (parent, { userID }) => {
+            return Post.find({ user_id: userID }).sort({ createdAt: -1 });
+        },
+
+        post: async (parent, { _id: postID }) => {
+            return Post.findOne({ _id: postId });
+        },
+    },
+
+    //Mutation:
 }
