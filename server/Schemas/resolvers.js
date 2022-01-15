@@ -39,11 +39,32 @@ const resolvers = {
     //Mutation:
 
     Mutation: {
+
         addUser: async (parent, { username, password }) => {
             const user = await User.create({ username, password });
             const token = signToken(user);
 
             return { token, user };
         },
+
+        login: async (parent, { username, passowrd }) => {
+            const user = await User.findOne({ username });
+
+            if (!user) {
+                throw new AuthenticationError("No username found.");
+            }
+
+            const correctPw = await user.isCorrectPassword(password);
+
+            if (!correctPw) {
+                throw new AuthenticationError("Incorrect Password.");
+            }
+
+            const token = signToken(user);
+            
+            return { token, user };
+        },
+
+        //addPost
     }
 }
