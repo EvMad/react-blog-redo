@@ -85,6 +85,17 @@ const resolvers = {
             throw new AuthenticationError("Please log in.");
         },
 
-        //removePost
+        removePost: async (parent, { postID }, context) => {
+
+            if (context.user) {
+                const post = await Post.findOneAndDelete({
+                    _id: postId,
+                });
+                return post;
+            }
+            throw new AuthenticationError("Please log in.");
+        },
+
+        //editPost
     }
 }
