@@ -65,6 +65,26 @@ const resolvers = {
             return { token, user };
         },
 
-        //addPost
+        addPost: async (parent, { postTitle, postContent, tag }, context) => {
+
+            if (context.user) {
+                let newTag = {
+                    category: tag
+                }
+                console.log(context.user);
+                console.log(newTag);
+                const post = await Post.create({
+                    postTitle,
+                    postContent,
+                    postAuthor: context.user.username,
+                    user_id: context.user._id,
+                    categories: newTag ,
+                });
+                return post;
+            }
+            throw new AuthenticationError("Please log in.");
+        },
+
+        //removePost
     }
 }
