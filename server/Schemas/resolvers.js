@@ -129,6 +129,10 @@ const resolvers = {
             } else {
                 throw new AuthenticationError("Please log in.");
             }
+
+            //deleteComment
         },
     },
 };
+
+module.exports = resolvers;
