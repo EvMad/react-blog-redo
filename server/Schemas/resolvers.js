@@ -10,7 +10,7 @@ const resolvers = {
 
     Query: {
 
-        users: async => {
+        users: async () => {
             return User.find().populate("posts");
         },
 
@@ -96,7 +96,7 @@ const resolvers = {
             throw new AuthenticationError("Please log in.");
         },
 
-        editPost: async(parent, { postTitle, postContent, postId }, context) => {
+        editPost: async (parent, { postTitle, postContent, postId }, context) => {
 
             if (context.user) {
                 const post = await Post.findOneAndUpdate(
@@ -109,6 +109,6 @@ const resolvers = {
             throw new AuthenticationError("Please log in.");
         },
 
-        //addComment
+        addComment: async ()
     }
 }
