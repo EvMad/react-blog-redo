@@ -130,7 +130,7 @@ const resolvers = {
                 throw new AuthenticationError("Please log in.");
             }
 
-            //deleteComment
+            //deleteComment: async (parent. { postId, commentId }, context) => {}
         },
     },
 };
