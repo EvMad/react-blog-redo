@@ -68,4 +68,12 @@ export const EDIT_POST = gql`
 
 //export const REMOVE_POST = gql``
 
+export const REMOVE_POST = gql`
+    mutation removePost($postId: ID!) {
+        removePost(postId: $postId) {
+            postId
+        }
+    }
+`;
+
 // remove comment? edit comment?
