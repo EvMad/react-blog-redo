@@ -25,4 +25,14 @@ function SignUp(props) {
 
     // const handleChange
 
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormState({
+            ...formState,
+            [name]: value,
+        });
+    };
+
+    // return
+
 }
