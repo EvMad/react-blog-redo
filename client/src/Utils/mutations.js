@@ -56,6 +56,16 @@ export const ADD_COMMENT = gql`
 
 //export const EDIT_POST = gql``
 
+export const EDIT_POST = gql`
+    mutation editPost($postTitle: String!, $postContent: String!, $postId: ID!) {
+        editPost(postTitle: $postTitle, postContent: $postContent, postId: $postId) {
+            postTitle
+            postContent
+            postId
+        }
+    }
+`;
+
 //export const REMOVE_POST = gql``
 
 // remove comment? edit comment?
