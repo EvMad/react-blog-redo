@@ -29,3 +29,16 @@ export const QUERY_USERPOSTS = gql`
         }
     }
 `;
+
+export const QUERY_POST = gql`
+    query onePost($post_id: ID!) {
+        post(postId: $post_id) {
+            _id
+            postContent
+            postAuthor
+            postTitle
+            createdAt
+            comments
+        }
+    }
+`;
