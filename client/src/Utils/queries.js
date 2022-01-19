@@ -55,3 +55,14 @@ export const QUERY_USERS = gql`
 `;
 
 // QUERY_USER
+
+export const QUERY_USER = gql`
+    query oneUser($username: String!) {
+        user(username: $username) {
+            _id
+            username
+            password
+            posts
+        }
+    }
+`;
