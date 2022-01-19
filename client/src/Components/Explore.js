@@ -12,6 +12,9 @@ const Explore = () => {
         fetchPolicy: "no-cache",
     });
 
+    const postList = data?.posts || [];
+    console.log(postList);
 
-    
+    //return
+
 }
