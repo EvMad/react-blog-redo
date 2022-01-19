@@ -42,3 +42,16 @@ export const QUERY_POST = gql`
         }
     }
 `;
+
+// QUERY_USERS
+
+export const QUERY_USERS = gql`
+    query allUsers {
+        users {
+            _id
+            username
+        }
+    }
+`;
+
+// QUERY_USER
