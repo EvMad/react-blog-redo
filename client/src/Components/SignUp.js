@@ -39,6 +39,8 @@ function SignUp(props) {
         <div>
             <Link></Link>
         </div>
-    )
+    );
 
-}
+};
+
+export default SignUp;
