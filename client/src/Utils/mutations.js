@@ -1,5 +1,7 @@
 import { gql } from '@apollo/client';
 
+// double-check syntax re: spacing and capitalization
+
 // export const ADD_USER = gql``
 
 export const ADD_USER = gql `
@@ -30,6 +32,16 @@ export const LOGIN = gql`
 `;
 
 //export const ADD_POST = gql``
+
+export const ADD_COMMENT = gql`
+    mutation addComment($postID!, $commentText: String!) {
+        addComment(postId: $postId, commentText: $commentText) {
+            postId
+            postText
+            commentAuthor
+        }
+    }
+`;
 
 //export const ADD_COMMENT = gql``
 
