@@ -76,4 +76,16 @@ export const REMOVE_POST = gql`
     }
 `;
 
-// remove comment? edit comment?
+// remove comment? does it need postId?
+
+
+export const REMOVE_COMMENT = gql`
+    mutation removeComment($postId: ID!, $commentId: ID!) {
+        removeComment(postId: $postId, commentId: $commentId) {
+            postId
+            commentId
+        }
+    }
+`;
+
+//edit comment?
