@@ -18,6 +18,17 @@ export const ADD_USER = gql `
 
 //export const LOGIN = gql``
 
+export const LOGIN = gql`
+    mutation login($username: String!, $passowrd: String!) {
+        login(username: $username, password: $passowrd) {
+            user {
+                username
+            }
+            token
+        }
+    }
+`;
+
 //export const ADD_POST = gql``
 
 //export const ADD_COMMENT = gql``
