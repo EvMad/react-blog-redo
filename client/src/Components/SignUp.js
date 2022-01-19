@@ -35,4 +35,10 @@ function SignUp(props) {
 
     // return
 
+    return (
+        <div>
+            <Link></Link>
+        </div>
+    )
+
 }
