@@ -33,6 +33,17 @@ export const LOGIN = gql`
 
 //export const ADD_POST = gql``
 
+export const ADD_POST = gql`
+    mutation addPost($postTitle: String!, $postContent: String!, $tag: String!) {
+        addPost(postTitle: $postTitle, postContent: $postContent, tag: $tag) {
+            postTitle
+            postContent
+        }
+    }
+`;
+
+//export const ADD_COMMENT = gql``
+
 export const ADD_COMMENT = gql`
     mutation addComment($postID!, $commentText: String!) {
         addComment(postId: $postId, commentText: $commentText) {
@@ -42,8 +53,6 @@ export const ADD_COMMENT = gql`
         }
     }
 `;
-
-//export const ADD_COMMENT = gql``
 
 //export const EDIT_POST = gql``
 
