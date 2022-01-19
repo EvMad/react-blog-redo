@@ -15,6 +15,8 @@ const Explore = () => {
     const postList = data?.posts || [];
     console.log(postList);
 
-    //return
+    //return ( <div> )
 
-}
+};
+
+//export default Explore;
