@@ -4,3 +4,14 @@ import { QUERY_POSTS } from "../Utils/queries";
 import auth from "../Utils/auth";
 
 //import images fonts and icons here?
+
+//library.add icons
+
+const Explore = () => {
+    const { loading, data } = useQuery(QUERY_POSTS, {
+        fetchPolicy: "no-cache",
+    });
+
+
+    
+}
