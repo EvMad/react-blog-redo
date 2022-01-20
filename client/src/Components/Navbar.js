@@ -13,3 +13,5 @@ function Navbar({ currentPage, handlePageChange }) {
         <aside></aside>
     );
 }
+
+export default Navbar;
