@@ -7,5 +7,9 @@ function Navbar({ currentPage, handlePageChange }) {
         auth.logout();
     };
 
-    // return
+    // return <aside> <ul>
+
+    return (
+        <aside></aside>
+    );
 }
