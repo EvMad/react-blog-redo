@@ -5,6 +5,8 @@ import auth from "../Utils/auth";
 
 const Comment = (props) => {
 
+    const [addComment] = useMutation(ADD_COMMENT);
+
     return (
         <div></div>
     );
