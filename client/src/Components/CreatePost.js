@@ -29,4 +29,10 @@ const CreatePost = (props) => {
 
         // return
 
+        return (
+            <div>
+                {/** <button onClick={handleFormSubmit}>Submit Post</button> */}
+            </div>
+        )
+
 }
