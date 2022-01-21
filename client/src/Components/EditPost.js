@@ -5,6 +5,8 @@ import { useQuery } from '@apollo/client';
 
 const EditPost = () => {
 
+    //do i need these const for editing a post??
+
     const { postId } = useParams();
 
     const { loading, data } = useQuery({ variables: { postId: postId }});
@@ -14,6 +16,10 @@ const EditPost = () => {
     if (loading) {
         return <div>Loading...</div>;
     }
+
+    //mutation
+
+    const [editPost] = useMutation(EDIT_POST);
 
     return (
         <div></div>
