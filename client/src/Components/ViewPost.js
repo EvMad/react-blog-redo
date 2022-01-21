@@ -21,3 +21,4 @@ const ViewPost = () => {
     );
 };
 
+export default ViewPost;
