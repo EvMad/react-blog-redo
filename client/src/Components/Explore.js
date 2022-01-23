@@ -32,7 +32,11 @@ const Explore = () => {
                    return (
                     
                     <li key={post._id} className="aspect-ratio">
-                        <div className="absolute-fill"></div>
+                        <div className="absolute-fill">
+                            <h2 className="postTitle">{post.postTitle}</h2>
+                            <div className="image"><img></img></div>
+                            <Link to={{ pathname: `/post/${post._id}` }}>Read More</Link>
+                        </div>
                     </li>
                 
                    )
