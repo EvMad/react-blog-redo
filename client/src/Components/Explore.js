@@ -17,6 +17,10 @@ const Explore = () => {
 
     //return ( <div> )
 
+    return (
+        <section className="grid"></section>
+    )
+
 };
 
 //export default Explore;
