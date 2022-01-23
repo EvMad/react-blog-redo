@@ -10,3 +10,7 @@
     --ratio-percent: 75%;
     --addl-height: 100px;
 }
+
+body {
+    margin: 0;
+}
