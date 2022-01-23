@@ -19,11 +19,18 @@ const Explore = () => {
 
     return (
         <section className="grid">
-
+                <aside className="aspect-ratio"></aside>
         {loading ? (
             <div>Loading...</div>
         ) : (
-            <aside className="aspect-ratio"></aside>
+            
+            <article>
+                <ul className="grid absolute-fill">
+                    <li className="aspect-ratio">
+                        <div className="absolute-fill"></div>
+                    </li>
+                </ul>
+            </article>
         )}
 
         </section>
