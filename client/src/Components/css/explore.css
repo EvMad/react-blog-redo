@@ -55,3 +55,7 @@ li {
     grid-template-columns: repeat(auto-fill, minmax(var(--min-card-width), 1fr));
     grid-column-gap: var(--spacing);
 }
+
+.aspect-ratio {
+    padding-top: var(--ratio-percent);
+}
