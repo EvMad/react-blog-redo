@@ -26,3 +26,13 @@ article {
     grid-column: 1 / -1;
     position: relative;
 }
+
+ul {
+    /* clear ul styles */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    /* additional gap */
+    grid-row-gap: var(--spacing);
+}
