@@ -59,3 +59,11 @@ li {
 .aspect-ratio {
     padding-top: var(--ratio-percent);
 }
+
+.aspect-ratio:after {
+    content:"";
+    height: var(--addl-height);
+    display: block;
+    /* delete border later */
+    border-top: 1px solid blue;
+}
