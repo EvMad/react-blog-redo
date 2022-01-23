@@ -36,3 +36,8 @@ ul {
     /* additional gap */
     grid-row-gap: var(--spacing);
 }
+
+li {
+    /* set up aspect ratio */
+    position: relative;
+}
