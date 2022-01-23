@@ -4,6 +4,9 @@
 
 
 :root {
+    /* variables */
     --spacing: 24px;
     --min-card-width: 250px;
+    --ratio-percent: 75%;
+    --addl-height: 100px;
 }
