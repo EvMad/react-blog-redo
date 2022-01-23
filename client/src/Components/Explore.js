@@ -25,11 +25,21 @@ const Explore = () => {
         ) : (
             
             <article>
-                <ul className="grid absolute-fill">
-                    <li className="aspect-ratio">
+                
+               <ul className="grid absolute-fill">
+
+               {postList.map((post) => {
+                   return (
+                    
+                    <li key={post._id} className="aspect-ratio">
                         <div className="absolute-fill"></div>
                     </li>
-                </ul>
+                
+                   )
+               })}
+
+               </ul>
+
             </article>
         )}
 
