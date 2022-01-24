@@ -39,6 +39,13 @@ function Navbar({ currentPage, handlePageChange }) {
                     className={currentPage === 'Login' ? 'nav-link active' : 'nav-link'}>
                         Login
                     </a>
+                    <li>
+                        <a href="signup"
+                        onClick={() => handlePageChange('Signup')}
+                        className={currentPage === 'Signup' ? 'nav-link active' : 'nav-link'}>
+                            Signup
+                        </a>
+                    </li>
                 </li>
                )}
 
