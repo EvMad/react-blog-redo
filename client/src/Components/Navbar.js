@@ -12,7 +12,7 @@ function Navbar({ currentPage, handlePageChange }) {
 
     return (
         <header>
-            <ul className="menu-list">
+            <ul className="nav-bar">
                 <li className="nav-item">
                 <a href="/" onClick={() => handlePageChange('Explore')}
                 className={currentPage === 'Explore' ? 'nav-link active' : 'nav-link'}>Explore</a>
