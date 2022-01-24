@@ -11,7 +11,7 @@ function Navbar({ currentPage, handlePageChange }) {
     // return <aside> <ul>
 
     return (
-        <aside></aside>
+        <header></header>
     );
 }
 
