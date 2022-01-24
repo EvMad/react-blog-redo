@@ -17,6 +17,31 @@ function Navbar({ currentPage, handlePageChange }) {
                 <a href="/" onClick={() => handlePageChange('Explore')}
                 className={currentPage === 'Explore' ? 'nav-link active' : 'nav-link'}>Explore</a>
                 </li>
+
+               {auth.loggedIn() ? (
+
+                    <li className="nav-item">
+                        <a href="createpost" 
+                        onClick={() => handlePageChange('Create Post')}
+                        className={currentPage === 'Create Post' ? 'nav-link active' : 'nav-link'}
+                         >
+                         Create Post
+                        </a>
+                        <li>
+                        <a className="nav-item" onClick={logout}>Logout</a>
+                    </li>
+                    </li>
+                    
+               )  : (
+                <li className="nav-item">
+                    <a href="login"
+                    onClick={() => handlePageChange('Login')}
+                    className={currentPage === 'Login' ? 'nav-link active' : 'nav-link'}>
+                        Login
+                    </a>
+                </li>
+               )}
+
             </ul>
         </header>
     );
