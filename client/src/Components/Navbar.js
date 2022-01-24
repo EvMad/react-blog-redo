@@ -11,7 +11,14 @@ function Navbar({ currentPage, handlePageChange }) {
     // return <aside> <ul>
 
     return (
-        <header></header>
+        <header>
+            <ul className="menu-list">
+                <li className="nav-item">
+                <a href="/" onClick={() => handlePageChange('Explore')}
+                className={currentPage === 'Explore' ? 'nav-link active' : 'nav-link'}>Explore</a>
+                </li>
+            </ul>
+        </header>
     );
 }
 
