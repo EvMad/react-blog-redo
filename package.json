@@ -12,6 +12,12 @@
     "seed": "cd server && npm run seeder",
     "build": "cd client && npm run build"
     
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
   }
  
 }
