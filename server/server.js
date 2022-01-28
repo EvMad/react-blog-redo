@@ -1,5 +1,4 @@
 const express = require('express');
-// npm run start is throwing error cannot find module 'apollo-server-express'
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
 const { authMiddleware } = require('./Utils/auth');
