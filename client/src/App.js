@@ -62,7 +62,11 @@ function App() {
       <Router>
         
     <section>
-      
+
+    </section>
+
+    <section>
+      <Navbar />
     </section>
 
       </Router>
