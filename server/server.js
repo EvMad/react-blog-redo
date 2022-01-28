@@ -15,6 +15,8 @@ const server = new ApolloServer({
   context: authMiddleware
 });
 
+// npm run start throwing error for await server.start() before calling server
+
 server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));
