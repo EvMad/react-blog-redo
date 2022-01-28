@@ -18,6 +18,7 @@ import Navbar from './Components/Navbar';
 import CreatePost from './Components/CreatePost';
 import ViewPost from './Components/ViewPost';
 import EditPost from './Components/EditPost';
+import Comment from './Components/Comment';
 
 
 
