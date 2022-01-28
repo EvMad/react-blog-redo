@@ -72,6 +72,10 @@ function App() {
         <Explore />
         </Route>
 
+        <Route exact path="/signup">
+          <Signup />
+        </Route>
+
     </section>
 
       </Router>
