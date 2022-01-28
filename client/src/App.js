@@ -76,6 +76,10 @@ function App() {
           <Signup />
         </Route>
 
+        <Route exact path="/login">
+          <Login />
+        </Route>
+
     </section>
 
       </Router>
