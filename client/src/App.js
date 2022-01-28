@@ -11,6 +11,8 @@ import './App.css';
 
 //import components !!
 
+import Explore from './Components/Explore';
+
 
 // construct main GraphQL API endpoint
 const httpLink = createHttpLink({
