@@ -14,7 +14,7 @@ type Post {
     user_id: String
     postTitle: String
     createdAt: String
-    categories: [CateforyName]!
+    categories: [CategoryName]!
     comments: [Comment]!
 }
 
