@@ -84,6 +84,10 @@ function App() {
           <CreatePost />
         </Route>
 
+        <Route exact path="/viewpost">
+          <ViewPost />
+        </Route>
+
     </section>
 
       </Router>
