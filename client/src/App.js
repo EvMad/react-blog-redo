@@ -67,6 +67,11 @@ function App() {
 
     <section>
       <Navbar />
+
+      <Route exact path="/">
+        <Explore />
+        </Route>
+
     </section>
 
       </Router>
