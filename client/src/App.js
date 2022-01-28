@@ -12,6 +12,9 @@ import './App.css';
 //import components !!
 
 import Explore from './Components/Explore';
+import Signup from './Components/SignUp';
+
+
 
 
 // construct main GraphQL API endpoint
