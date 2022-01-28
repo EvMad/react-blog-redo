@@ -43,7 +43,7 @@ type Query {
 type Mutation {
     addUser(username: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
-    addPost(postTitle: String!, postConent: String!, tag: String!): Post
+    addPost(postTitle: String!, postContent: String!, tag: String!): Post
     addComment(postId: ID!, commentText: String!): Post
     editPost(postTitle: String!, postContent: String!, postId: ID!): Post
     removePost(postId: ID!): Post
