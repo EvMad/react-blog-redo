@@ -14,6 +14,8 @@ import './App.css';
 import Explore from './Components/Explore';
 import Signup from './Components/SignUp';
 import Login from './Components/Login';
+import Navbar from './Components/Navbar';
+
 
 
 
