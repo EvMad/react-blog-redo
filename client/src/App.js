@@ -80,6 +80,10 @@ function App() {
           <Login />
         </Route>
 
+        <Route exact path="/createpost">
+          <CreatePost />
+        </Route>
+
     </section>
 
       </Router>
