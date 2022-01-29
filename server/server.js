@@ -2,7 +2,7 @@ const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
 const { authMiddleware } = require('./Utils/auth');
-const { typeDefs, resolvers } = require('./schemas');
+const { typeDefs, resolvers } = require('./Schemas');
 const db = require('./Config/connection');
 
 const PORT = process.env.PORT || 3001;
@@ -12,6 +12,7 @@ const server = new ApolloServer({
   introspection: true,
   typeDefs,
   resolvers,
+  // schema: await buildSchema ??
   context: authMiddleware,
   formatError
 });
