@@ -20,11 +20,12 @@ const server = new ApolloServer({
 // npm run start throwing error for await server.start() before calling server
 
 async function startServer(typeDefs, resolvers) {
+
+// define const server within this function ??
+
   await server.start();
 
 server.applyMiddleware({ app, cors: false });
-};
-startServer();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -45,3 +46,10 @@ db.once('open', () => {
     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
   });
 });
+
+
+
+};
+startServer();
+
+
