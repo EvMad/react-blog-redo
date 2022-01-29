@@ -14,7 +14,7 @@ const server = new ApolloServer({
   resolvers,
   // schema: await buildSchema ??
   context: authMiddleware,
-  formatError
+  
 });
 
 // npm run start throwing error for await server.start() before calling server
