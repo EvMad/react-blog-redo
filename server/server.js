@@ -27,6 +27,8 @@ async function startServer(typeDefs, resolvers) {
 
 server.applyMiddleware({ app, cors: false });
 
+
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
@@ -35,6 +37,8 @@ app.use(express.json());
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
+
+
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
@@ -47,7 +51,9 @@ db.once('open', () => {
   });
 });
 
-
+// debug attempt npm run start error re: no .catch
+await new Promise(resolve => app.listen({ port: 3001 }, resolve));
+return { server, app };
 
 };
 startServer();
