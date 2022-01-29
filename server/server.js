@@ -20,7 +20,7 @@ const server = new ApolloServer({
 
 await server.start();
 
-server.applyMiddleware({ app });
+server.applyMiddleware({ app, cors: false });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
