@@ -12,7 +12,8 @@ const server = new ApolloServer({
   introspection: true,
   typeDefs,
   resolvers,
-  context: authMiddleware
+  context: authMiddleware,
+  formatError
 });
 
 // npm run start throwing error for await server.start() before calling server
