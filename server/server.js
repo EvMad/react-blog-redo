@@ -19,7 +19,7 @@ const server = new ApolloServer({
 
 // npm run start throwing error for await server.start() before calling server
 
-async function startServer() {
+async function startServer(typeDefs, resolvers) {
   await server.start();
 
 server.applyMiddleware({ app, cors: false });
