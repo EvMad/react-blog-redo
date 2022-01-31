@@ -52,7 +52,7 @@ db.once('open', () => {
 });
 
 // debug attempt npm run start error re: no .catch
-await new Promise(resolve => app.listen({ port: 3001 }, resolve));
+// await new Promise(resolve => app.listen({ port: 3001 }, resolve));
 return { server, app };
 
 };
