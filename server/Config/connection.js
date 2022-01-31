@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-//requires new database name for localhost/  where am i determining mongo database name?
+//new database created through MongoDB 1/31/22 and added to Heroku config vars
 
 //npm run start error from here:
 
