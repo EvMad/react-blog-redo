@@ -19,7 +19,8 @@ const server = new ApolloServer({
   
 });
 
-// npm run start throwing error for await server.start() before calling server
+// npm run start throwing error for await server.start() before calling server. Resolved 1/31/22
+// typeDefs, resolvers being called?
 
 async function startServer(typeDefs, resolvers) {
 
