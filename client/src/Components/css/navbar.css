@@ -77,3 +77,7 @@ header {
         cursor: pointer;
     }
 }
+
+.nav-active {
+    transform: translateX(0%);
+}
