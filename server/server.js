@@ -38,13 +38,13 @@ app.use(express.json());
 // what is file path client/build ??
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
+  app.use(express.static(path.join(__dirname, 'build')));
 }
 
 //getting browser error for fill path server/build/index.html
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 // do I need app.post? app.get all? app.submit?
