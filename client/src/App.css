@@ -4,6 +4,10 @@
 --black: #000000;
 }
 
+/* compare to explore.css aspect-ratio */
+
 * {
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
