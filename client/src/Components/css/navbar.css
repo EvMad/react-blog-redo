@@ -30,3 +30,15 @@ header {
     font-weight: bold;
     font-size: 14px;
 }
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
