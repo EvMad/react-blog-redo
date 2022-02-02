@@ -14,3 +14,19 @@ header {
     justify-content: space-around;
     width: 30%;
 }
+
+/* .logo class for styled logo ? */
+
+.nav-item li {
+    list-style: none;
+}
+
+/* change nav-item text color to off-white */
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
