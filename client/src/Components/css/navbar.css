@@ -9,7 +9,7 @@ header {
     background-color: var(--dark);
 }
 
-.nav-item {
+.nav-bar {
     display: flex;
     justify-content: space-around;
     width: 30%;
@@ -17,13 +17,13 @@ header {
 
 /* .logo class for styled logo ? */
 
-.nav-item li {
+.nav-bar li {
     list-style: none;
 }
 
 /* change nav-item text color to off-white */
 
-.nav-item a {
+.nav-bar a {
     color: #fff;
     text-decoration: none;
     letter-spacing: 3px;

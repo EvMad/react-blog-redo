@@ -8,6 +8,10 @@ function Navbar({ currentPage, handlePageChange }) {
         auth.logout();
     };
 
+    // function for nav bar burger and responsive nav slide
+
+    // const burger = document.querySelector(".burger");
+
     // return <aside> <ul>
 
     return (
