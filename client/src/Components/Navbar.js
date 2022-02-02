@@ -10,7 +10,31 @@ function Navbar({ currentPage, handlePageChange }) {
 
     // function for nav bar burger and responsive nav slide
 
-    // const burger = document.querySelector(".burger");
+    function navSlide() {
+        const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-bar");
+    const navLinks = document.querySelectorAll(".nav-bar li");
+
+    burger.addEventListener("click", () => {
+        //Toggle Nav
+        nav.classList.toggle("nav-active");
+        
+        //Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ""
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+            }
+        });
+        //Burger Animation
+        burger.classList.toggle("toggle");
+    });
+    }
+    navSlide();
+    
+
+
 
     // return <aside> <ul>
 
@@ -52,6 +76,12 @@ function Navbar({ currentPage, handlePageChange }) {
                     </li>
                 </li>
                )}
+
+<div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
 
             </ul>
         </header>
