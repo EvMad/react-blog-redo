@@ -8,3 +8,9 @@ header {
     min-height: 8vh;
     background-color: var(--dark);
 }
+
+.nav-item {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
