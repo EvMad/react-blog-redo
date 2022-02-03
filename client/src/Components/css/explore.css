@@ -85,4 +85,9 @@ li {
 .image img {
     opacity: 0.9;
     width: fit-content;
+    background-color: var(--light);
+}
+
+.image img:hover {
+    opacity: 1;
 }
