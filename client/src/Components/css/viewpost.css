@@ -7,3 +7,8 @@
     flex-direction: column;
 }
 
+.singlePost {
+    width: 75%;
+    border: 3px var(--dark);
+    border-radius: 10px;
+}
