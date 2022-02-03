@@ -12,3 +12,9 @@
     border: 3px var(--dark);
     border-radius: 10px;
 }
+
+.image {
+    background-color: var(--light);
+    width:fit-content;
+    max-height: 30%;
+}
