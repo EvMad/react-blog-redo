@@ -17,7 +17,18 @@ const ViewPost = () => {
     }
 
     return(
-        <div></div>
+        <div className="postContainer">
+
+            <div className="singlePost">
+                <div className="image">
+                    <img></img>
+                </div>
+                <h2 className="postHeading">
+                </h2>
+                <p className="postContent"></p>
+            </div>
+
+        </div>
     );
 };
 
