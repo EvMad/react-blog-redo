@@ -25,3 +25,9 @@
     font-size: 24px;
     font-weight: bold;
 }
+
+.postContent {
+    color: var(--black);
+    text-align: left;
+    font-size: 14px;
+}
