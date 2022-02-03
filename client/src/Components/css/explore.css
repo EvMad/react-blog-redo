@@ -19,7 +19,7 @@ body {
 
 /* just for testing / delete later */
 section, div {
-    border: 1px solid blue;
+    border: 1px solid var(--dark);
     padding: var(--spacing);
 }
 
@@ -72,5 +72,5 @@ li {
     height: var(--addl-height);
     display: block;
     /* delete border later */
-    border-top: 1px solid blue;
+    border-top: 1px solid var(--dark);
 }
