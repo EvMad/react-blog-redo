@@ -18,3 +18,10 @@
     width:fit-content;
     max-height: 30%;
 }
+
+.postHeading {
+    color: var(--dark);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
