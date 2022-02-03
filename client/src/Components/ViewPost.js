@@ -23,8 +23,7 @@ const ViewPost = () => {
                 <div className="image">
                     <img></img>
                 </div>
-                <h2 className="postHeading">
-                </h2>
+                <h2 className="postHeading">{post.postTitle}</h2>
                 <p className="postContent"></p>
             </div>
 
