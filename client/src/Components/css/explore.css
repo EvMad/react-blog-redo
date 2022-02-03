@@ -74,3 +74,10 @@ li {
     /* delete border later */
     border-top: 1px solid var(--dark);
 }
+
+.postTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--dark);
+}
