@@ -1,3 +1,9 @@
 :root {
     --font-family: ;
 }
+
+.postContainer {
+    display: flex;
+    flex-direction: column;
+}
+
