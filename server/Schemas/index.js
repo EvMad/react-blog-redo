@@ -1,5 +1,4 @@
-// const requires for typeDef and resolvers
-//npm run start error cannot find apollo-server-express
+//npm run build error Apollo needs schema, typeDefs, or modules
 
 const typeDefs = require('./typeDefs');
 const resolvers = require('./resolvers');
