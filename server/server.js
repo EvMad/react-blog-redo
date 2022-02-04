@@ -19,7 +19,7 @@ const server = new ApolloServer({
 });
 
 
-// typeDefs, resolvers being called?
+// typeDefs, resolvers being called? 2/3/22 update npm run build debug same error "Apollo Server requires existing schema, module, typeDefs"
 
 async function startServer(typeDefs, resolvers) {
 
