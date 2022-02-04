@@ -43,6 +43,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 //getting browser error for fill path server/build/index.html
+// error is due to babel-jest dependency install
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
