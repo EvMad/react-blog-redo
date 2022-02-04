@@ -8,7 +8,7 @@ const db = require('./Config/connection');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-// move const server within startServer() ??
+
 
 const server = new ApolloServer({
   introspection: true,
@@ -23,6 +23,7 @@ const server = new ApolloServer({
 // typeDefs, resolvers being called?
 
 async function startServer(typeDefs, resolvers) {
+
 
 // define const server within this function ??
 
