@@ -4,11 +4,12 @@ const mongoose = require('mongoose');
 
 //npm run start debug successful. npm run build still needs debug as of 2/10/22
 
-//npm run seed error re: { useNewUrlParser: true }
+//npm run seed error re: { useNewUrlParser: true } MongoClient.connect ??
 
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/react-blog-redo',
   {
+    
     // useNewUrlParser: true,
     // useUnifiedTopology: true,
     // useCreateIndex: true,
