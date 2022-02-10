@@ -8,6 +8,8 @@ const db = require('./Config/connection');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+//2/10/22 npm run start error re: MongoClient.connect { useNewUrlParser: true }
+
 
 const server = new ApolloServer({
   introspection: true,
