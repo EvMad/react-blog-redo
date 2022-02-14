@@ -34,6 +34,9 @@ coverage
 # Bower dependency directory
 bower_components
 
+#.lock-wscript
+.lock-wscript
+
 
 #Compiled Binary addons
 build/Release
