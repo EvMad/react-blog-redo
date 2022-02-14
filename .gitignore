@@ -69,3 +69,6 @@ typings/
 # Output of 'npm pack'
 *.tgz 
 
+# dotenv environment variable file
+.env
+.env.test
