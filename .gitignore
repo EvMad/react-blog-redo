@@ -31,6 +31,10 @@ coverage
 # Grunt intermediate storage
 .grunt
 
+# Bower dependency directory
+bower_components
+
+
 #Compiled Binary addons
 build/Release
 
