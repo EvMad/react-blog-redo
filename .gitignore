@@ -18,6 +18,8 @@ pids
 *.seed
 *.pid.lock
 
+#Compiled Binary addons
+build/Release
 
 # Dependency directories
 node_modules
