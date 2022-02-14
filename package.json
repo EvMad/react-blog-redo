@@ -27,5 +27,8 @@
     "mongoose": "^6.1.8",
     "nodemon": "^2.0.15",
     "react-scripts": "^5.0.0"
+  },
+  "resolutions": {
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
