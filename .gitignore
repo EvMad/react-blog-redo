@@ -11,5 +11,13 @@ lerna-debug.log*
 # Diagnostic Reports
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+# Runtime data
+
+pids
+*.pid
+*.seed
+*.pid.lock
+
+
 # Dependency directories
 node_modules
