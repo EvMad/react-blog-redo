@@ -2,7 +2,7 @@
   "name": "react-sandbox",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.js",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "start": "node server/server.js",
