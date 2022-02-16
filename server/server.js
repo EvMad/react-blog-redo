@@ -8,7 +8,6 @@ const db = require('./Config/connection');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-//2/10/22 npm run start error re: MongoClient.connect { useNewUrlParser: true }
 
 
 const server = new ApolloServer({
@@ -37,7 +36,7 @@ server.applyMiddleware({ app, cors: false });
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// what is file path client/build ??
+
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'build')));
@@ -47,6 +46,7 @@ if (process.env.NODE_ENV === 'production') {
 //getting browser error for fill path server/build/index.html
 // error is due to babel-jest dependency install: ran npm ls babel-jest
 //update 2/13/22 still debugging re package-lock, node_modules, etc for run build
+//update 2/16/22 re-configured all three package.json files. same babel-jest error persists on npm run build
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
