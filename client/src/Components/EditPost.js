@@ -25,7 +25,9 @@ const EditPost = () => {
 
     //copy handleFormSubmit from CreatePost.js?
 
-    const mutationResponse = await editPost ({
+    //2/18/22 removed await from editPost re npm build error
+
+    const mutationResponse = editPost ({
         variables: {
             postTitle: document.querySelector('#postTitle').value,
                 postContent: document.querySelector('#postContent').value,
