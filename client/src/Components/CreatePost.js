@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // 2/17/22 npm run build error re: apollo/client
-import { useMutation } from "apollo/client";
+import { useMutation } from "@apollo/client";
 import { ADD_POST } from "../Utils/mutations";
 // import css
 import auth from "../Utils/auth";
