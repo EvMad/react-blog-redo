@@ -51,6 +51,7 @@ if (process.env.NODE_ENV === 'production') {
 // error is due to babel-jest dependency install: ran npm ls babel-jest
 //update 2/13/22 still debugging re package-lock, node_modules, etc for run build
 //update 2/16/22 re-configured all three package.json files. same babel-jest error persists on npm run build
+//update 2/17/22 babel-jest error resolved.  npm run build error for apollo/client install and start script
 
 app.get('*', (req, res) => {
   //2/17/22:
