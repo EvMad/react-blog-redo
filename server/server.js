@@ -53,7 +53,10 @@ if (process.env.NODE_ENV === 'production') {
 //update 2/16/22 re-configured all three package.json files. same babel-jest error persists on npm run build
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  //2/17/22:
+  res.sendFile(path.resolve(_dirname, 'client', 'build', 'index.html'));
+  
+  // res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 // do I need app.post? app.get all? app.submit?
