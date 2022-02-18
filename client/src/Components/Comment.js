@@ -9,7 +9,9 @@ const Comment = (props) => {
 
     //const handleFormSubmit - needs #ID's for querySelector
 
-    const mutationResponse = await addComment ({
+    //2/18/22 npm run build error re: await addComment
+
+    const mutationResponse = addComment ({
         variables: {
             //postId ??
             commentText: document.querySelector('#comment').value,
