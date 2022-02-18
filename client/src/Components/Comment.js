@@ -1,5 +1,5 @@
 import React from 'react';
-import { useMutation } from "apollo/client";
+import { useMutation } from "@apollo/client";
 import { ADD_COMMENT } from "../Utils/mutations";
 import auth from "../Utils/auth";
 
