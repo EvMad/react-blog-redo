@@ -2,7 +2,7 @@
 
 ## Description
 
-This is intended to be a generic blog where users can post, edit, delete, and comment. The application has been built using React, React Router, MongoDB, GraphQL, Express, Node, Apollo, JavaScript, and CSS.  This is my first full stack MERN app built completely on my own outside of a team setting.
+This is intended to be a generic blog where users can post, edit, delete, and comment. The application has been built using React, React Router, MongoDB, GraphQL, Express, Node, Apollo, JavaScript, and CSS, and will be deployed through Heroku.  This is my first full stack MERN app built completely on my own outside of a team setting.
 
 ### Current Work Update:
 
