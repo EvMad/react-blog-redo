@@ -22,6 +22,7 @@ const EditPost = () => {
 
     //mutation
     //2/18/22 npm run build debug useMutation is called conditionally 
+    // 3/2/22 error persists
 
     const [editPost] = useMutation(EDIT_POST);
 
