@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { LOGIN } from '../Utils/mutations';
 import Auth from '../Utils/auth';
 
-//function Login(props)
+// 3/11/22 npm run build warnings 'error,' 'handleFormSubmit,' 'handleChange' assigned a value but never used 
 
 function Login(props) {
 
