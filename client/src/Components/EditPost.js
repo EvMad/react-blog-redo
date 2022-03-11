@@ -6,6 +6,8 @@ import { useQuery } from '@apollo/client';
 import { useMutation } from "@apollo/client";
 import { EDIT_POST } from "../Utils/mutations";
 
+const [editPost] = useMutation(EDIT_POST);
+
 const EditPost = () => {
 
     //do i need these const for editing a post??
@@ -23,8 +25,11 @@ const EditPost = () => {
     //mutation
     //2/18/22 npm run build debug useMutation is called conditionally 
     // 3/2/22 error persists
+    // 3/10/22 moved const [editPost] = useMutation(EDIT_POST); outside scope of this function
 
-    const [editPost] = useMutation(EDIT_POST);
+   
+    
+
 
     //copy handleFormSubmit from CreatePost.js?
 
@@ -46,5 +51,7 @@ const EditPost = () => {
         <div></div>
     );
 };
+
+
 
 export default EditPost;
