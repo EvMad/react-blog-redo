@@ -28,7 +28,7 @@ const ViewPost = () => {
 
             <div className="singlePost">
                 <div className="image">
-                    <img></img>
+                    <img alt="blog post"></img>
                 </div>
                 {/* <h2 className="postHeading">{post.postTitle}</h2>
                 <p className="postContent">{post.postContent}</p> */}
