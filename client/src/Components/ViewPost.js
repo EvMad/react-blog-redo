@@ -5,7 +5,7 @@ import { useQuery } from '@apollo/client';
 //added 2/18/22 re npm run build debug.  did not solve error:
 import { QUERY_POST } from '../Utils/queries';
 import './css/viewpost.css';
-import { Post } from '../../../server/Models/Post';
+// import { Post } from '../../../server/Models/Post';
 
 //2/18/22 npm run build debug error "post" is not defined.
 
