@@ -33,7 +33,7 @@ const CreatePost = (props) => {
 
         return (
             <div>
-                {/** <button onClick={handleFormSubmit}>Submit Post</button> */}
+                <button onClick={handleFormSubmit}>Submit Post</button>
             </div>
         )
 
