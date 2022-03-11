@@ -37,15 +37,17 @@ const EditPost = () => {
 
     //2/18/22 removed await from editPost re npm build error
 
-    const mutationResponse = editPost ({
-        variables: {
-            postTitle: document.querySelector('#postTitle').value,
-                postContent: document.querySelector('#postContent').value,
-                tag: document.querySelector('#category').value,
-        },
-    });
-    alert('Successfully Edited Post');
-        window.location.assign('/');
+    // 3/10/22 commenting out below const for debug
+
+    // const mutationResponse = editPost ({
+    //     variables: {
+    //         postTitle: document.querySelector('#postTitle').value,
+    //             postContent: document.querySelector('#postContent').value,
+    //             tag: document.querySelector('#category').value,
+    //     },
+    // });
+    // alert('Successfully Edited Post');
+    //     window.location.assign('/');
 
     
 
