@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-// 2/17/22 npm run build error re: apollo/client
+// import React, { useState } from "react";
+
 import { useMutation } from "@apollo/client";
 import { ADD_POST } from "../Utils/mutations";
-// import css
+
 import "./css/createpost.css";
-import auth from "../Utils/auth";
+// import auth from "../Utils/auth";
 
 const CreatePost = (props) => {
 
