@@ -4,6 +4,8 @@ import { useMutation } from '@apollo/client';
 import Auth from '../Utils/auth';
 import { ADD_USER } from '../Utils/mutations';
 
+// 3/11/22 npm run build warnings'handleFormSubmit' and 'handleChange' assigned a value but never used 
+
 function SignUp(props) {
     
     const [formState, setFormState] = useState({ username: '', password: '' });
