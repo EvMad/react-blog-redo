@@ -8,6 +8,7 @@ import './css/viewpost.css';
 
 
 //2/18/22 npm run build debug error "post" is not defined.
+// 3/11/22 npm run build returns no errors after commenting out return h2 and p divs re "post"
 
 
 const ViewPost = () => {
