@@ -18,6 +18,7 @@ const CreatePost = (props) => {
         console.log(document.querySelector('#postContent').value);
         console.log(document.querySelector('#category').value);
 
+        // npm run build warning mutationResponse is assigned a value but never used 
         const mutationResponse = await addPost ({
             variables: {
                 postTitle: document.querySelector('#postTitle').value,
