@@ -9,7 +9,7 @@ const Comment = (props) => {
 
     //const handleFormSubmit - needs #ID's for querySelector
 
-    //2/18/22 npm run build error re: await addComment
+    // 3/11/22 npm run build warning auth is defined but never used
 
     const mutationResponse = addComment ({
         variables: {
