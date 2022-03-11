@@ -9,7 +9,7 @@ import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
-//import components !!
+// 3/11/22 npm run build warnings for EditPost and Comment defined but never used
 
 import Explore from './Components/Explore';
 import Signup from './Components/SignUp';
