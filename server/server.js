@@ -56,6 +56,10 @@ if (process.env.NODE_ENV === 'production') {
 //update 3/11/22 npm run build errors cleared. npm run develop error "_dirname is not defined"
 
 app.get('*', (req, res) => {
+
+// 3/11/22:
+__dirname = path.resolve(path.dirname(''));
+
   //2/17/22:
   res.sendFile(path.resolve(_dirname, 'client', 'build', 'index.html'));
 
