@@ -58,6 +58,9 @@ if (process.env.NODE_ENV === 'production') {
 app.get('*', (req, res) => {
   //2/17/22:
   res.sendFile(path.resolve(_dirname, 'client', 'build', 'index.html'));
+
+  // 3/11/22 re debug:
+  console.log(_dirname);
   
   // res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
