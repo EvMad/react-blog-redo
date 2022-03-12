@@ -53,6 +53,8 @@ if (process.env.NODE_ENV === 'production') {
 //update 2/16/22 re-configured all three package.json files. same babel-jest error persists on npm run build
 //update 2/17/22 babel-jest error resolved.  npm run build error for apollo/client install and start script
 
+//update 3/11/22 npm run build errors cleared. npm run develop error "_dirname is not defined"
+
 app.get('*', (req, res) => {
   //2/17/22:
   res.sendFile(path.resolve(_dirname, 'client', 'build', 'index.html'));
