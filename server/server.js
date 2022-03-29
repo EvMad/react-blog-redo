@@ -55,7 +55,7 @@ if (process.env.NODE_ENV === 'production') {
 
 //update 3/11/22 npm run build errors cleared. npm run develop error "_dirname is not defined"
 
-//update 3/28/22 npm run build with errors for un used vars. reinstalling npm packages for debug. no connection to localhost on build
+//update 3/28/22 npm run build with errors for un used vars. reinstalling npm packages for debug. no connection to localhost on build. same _dirname error on run develop
 
 app.get('*', (req, res) => {
 
