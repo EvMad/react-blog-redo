@@ -5,6 +5,11 @@ const { authMiddleware } = require('./Utils/auth');
 const { typeDefs, resolvers } = require('./Schemas');
 const db = require('./Config/connection');
 
+// re: _dirname error
+// import { dirname } from 'path';
+
+const __dirname = dirname(__filename);
+
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -64,7 +69,7 @@ app.get('*', (req, res) => {
 // __dirname = path.resolve();
 
   //2/17/22:
-  res.sendFile(path.resolve(_dirname, 'client', 'build', 'index.html'));
+  res.sendFile(path.resolve( _dirname, 'client', 'build', 'index.html'));
 
   // 3/11/22 re debug:
   console.log(_dirname);
