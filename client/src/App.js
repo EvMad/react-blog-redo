@@ -6,10 +6,9 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
-// 3/11/22 npm run build warnings for EditPost and Comment defined but never used
 
 import Explore from './Components/Explore';
 import Signup from './Components/SignUp';
@@ -19,9 +18,6 @@ import CreatePost from './Components/CreatePost';
 import ViewPost from './Components/ViewPost';
 import EditPost from './Components/EditPost';
 import Comment from './Components/Comment';
-
-
-
 
 
 
@@ -59,38 +55,28 @@ const client = ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Router>
-        
-    <section>
+      <BrowserRouter>
 
-    </section>
-
-    <section>
       <Navbar />
+        
+    
+    <Routes>
 
-      <Route exact path="/">
-        <Explore />
-        </Route>
+    <Route exact path="/" element={<Explore />}></Route>
+      
+    <Route exact path="/signup" element={<Signup />}></Route>
 
-        <Route exact path="/signup">
-          <Signup />
-        </Route>
+    <Route exact path="/login" element={ <Login />}></Route>
 
-        <Route exact path="/login">
-          <Login />
-        </Route>
+    <Route exact path="/createpost" element={<CreatePost />}></Route>
 
-        <Route exact path="/createpost">
-          <CreatePost />
-        </Route>
+    <Route exact path="/viewpost" element={<ViewPost />}></Route>
 
-        <Route exact path="/viewpost">
-          <ViewPost />
-        </Route>
+    </Routes>
 
-    </section>
+        
 
-      </Router>
+      </BrowserRouter>
     </ApolloProvider>
   );
 }
