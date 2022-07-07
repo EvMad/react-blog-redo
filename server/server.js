@@ -79,7 +79,7 @@ db.once('open', () => {
 });
 
 
-// return { server, app };
+return { server, app };
 
 };
 startServer();
