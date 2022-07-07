@@ -69,7 +69,7 @@ app.get('*', (req, res) => {
   // res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-// do I need app.post? app.get all? app.submit?
+
 
 db.once('open', () => {
   app.listen(PORT, () => {
