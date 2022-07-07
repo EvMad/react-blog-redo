@@ -53,15 +53,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static('public'));
 }
 
-//getting browser error for fill path server/build/index.html
-// error is due to babel-jest dependency install: ran npm ls babel-jest
-//update 2/13/22 still debugging re package-lock, node_modules, etc for run build
-//update 2/16/22 re-configured all three package.json files. same babel-jest error persists on npm run build
-//update 2/17/22 babel-jest error resolved.  npm run build error for apollo/client install and start script
 
-//update 3/11/22 npm run build errors cleared. npm run develop error "_dirname is not defined"
-
-//update 3/28/22 npm run build with errors for un used vars. reinstalling npm packages for debug. no connection to localhost on build. same _dirname error on run develop
 
 app.get('*', (req, res) => {
 
