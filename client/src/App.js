@@ -60,7 +60,7 @@ function App() {
       <Navbar />
         
     
-    <Routes>
+   
 
     <Route exact path="/" element={<Explore />}></Route>
       
@@ -72,7 +72,7 @@ function App() {
 
     <Route exact path="/viewpost" element={<ViewPost />}></Route>
 
-    </Routes>
+   
 
         
 
