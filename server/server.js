@@ -39,7 +39,7 @@ async function startServer() {
 server.applyMiddleware({ app, cors: false });
 
 
-
+// 8/1/22 should this be changed back to true?
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
