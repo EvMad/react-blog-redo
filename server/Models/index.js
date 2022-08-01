@@ -6,4 +6,6 @@ const Post = require('./Post');
 
 // module.exports = { component }
 
-module.exports = { User, Post };
+// module.exports = { User, Post };
+
+export{ User, Post };
