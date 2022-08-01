@@ -17,7 +17,8 @@ const app = express();
 
 
 const server = new ApolloServer({
-  introspection: true,
+  // commenting out following line re: 8/1/22 npm run build debug.  no errors but no build either.
+  // introspection: true,
   typeDefs,
   resolvers,
   // schema: await buildSchema ??
