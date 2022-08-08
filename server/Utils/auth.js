@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-const secret = "seacrate";
+const secret = AUTH_SECRET.env;
 const expiration = "2h";
 
 module.exports = {
